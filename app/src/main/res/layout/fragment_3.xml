@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CALCULADORA"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/txtNro1"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="#EFE9E9"
+            android:ems="10"
+            android:hint="Ingrese el 1er número:"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtNro2"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="#EFE9E9"
+            android:ems="10"
+            android:hint="Ingrese el 2do número:"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#06523a"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#03011c"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnProductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="@color/black"
+                android:text="X"/>
+
+            <Button
+                android:id="@+id/btnDivs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#5c061d"
+                android:text="/" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnPotenciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#94032a"
+                android:text="˄" />
+
+            <Button
+                android:id="@+id/btnRaices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#45574e"
+                android:text="√" />
+
+            <Button
+                android:id="@+id/btnPorcentajes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#1d052b"
+                android:text="%"/>
+
+            <Button
+                android:id="@+id/btnFactoriales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#00360a"
+                android:text="X!" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu respuesta:"
+            android:gravity="left"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:hint="el resultado es: "
+            android:inputType="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#824b0d"
+                android:text="L I M P I A R" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#014670"
+                android:text="S A L I R" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
